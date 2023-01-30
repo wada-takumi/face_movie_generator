@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>笑顔でクリップ</title>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+<main>
+  <p>カメラをvideoタグで再生</p>
+  <div id="cameraArea">
+    <video id="camera" width="480" height="360" playsinline muted autoplay></video>
+    <canvas id="canvas"></canvas>
+    <div id="emoticonBar"><span id="emoticon"></span></div>
+  </div>
+
+  <p>画面共有</p>
+  <p><button id="start">Start Capture</button>&nbsp;
+    <button id="stop">Stop Capture</button></p>
+  <!-- <p>スクリーンショット</p> 
+  <button id="capture">スクショ</button> -->
+  <a href="" button id="download" download="movie.webm">ダウンロード</a>
+  <br>
+  <p>PC画面をvideoタグで再生</p> 
+  <video id="video3" width="1280" height="800" autoplay></video>
+  <br>
+  <p>カメラとPC画面をcanvasタグで描画</p> 
+  <canvas id="canvas2" width="1280" height="800"></canvas>
+  <br>
+
+  <script src="./js/face-api.min.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+</html>

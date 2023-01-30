@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>笑顔でクリップ</title>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+
+<h4>画像の読み込み</h4>
+<p></p>
+<input type="file" id="inputfile" accept="video/mp4,video/webm,video/ogg" onchange="onAddFile(event);" multiple>
+<p><button onclick="stopMovie(); ">停止</button></p>
+<h4>videoタグで再生</h4>        
+<video id="SrcVideo"></video>
+<h4>canvasで再生</h4> 
+<canvas id="SrcCanvas"></canvas>
+<p></p>
+
+
+<script src="./js/main.js"></script>
+</body>
+</html>
